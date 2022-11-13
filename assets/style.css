@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 15px 40px;
+  transition: all 0.6s;
+}
+.btn:hover {
+  background-color: orangered;
+}
+.icons {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+header#header {
+  height: 900px;
+  background: url("../assets/images/foto-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header#header .dots {
+  position: fixed;
+  left: 95%;
+  bottom: 60%;
+}
+header#header ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+header#header ul a {
+  display: block;
+  text-decoration: none;
+  background-color: #999;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header#header ul a:hover {
+  display: block;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+header#header .active {
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+}
+
+header#header .container {
+  height: 700px;
+  padding: 100px;
+}
+header#header .content {
+  padding-top: 70px;
+  height: 500px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  /* background-color: red; */
+}
+header#header .content h3 {
+  font-size: 25px;
+}
+header#header .content h1 {
+  color: red;
+  border: 2px solid red;
+  padding: 20px 30px;
+}
+header#header .content h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header#header .content p {
+  width: 800px;
+}
+
+section#what-I-do {
+  height: 500px;
+  background: #1a1a1a;
+  color: white;
+}
+
+section#what-I-do .container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#what-I-do h1 {
+  margin-bottom: 40px;
+}
+section#what-I-do .content {
+  width: 1000px;
+  display: flex;
+  gap: 20px;
+}
+section#what-I-do .abilitys {
+  color: #999;
+  width: 400px;
+  display: flex;
+  gap: 20px;
+}
+section#what-I-do h3 {
+  color: white;
+  padding-bottom: 15px;
+}
+section#what-I-do .content .fa {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+  font-size: 44px;
+  border-radius: 50%;
+}
+section#about {
+  height: 400px;
+  background: black;
+  color: white;
+}
+section#about .content {
+  padding-top: 100px;
+  display: grid;
+
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+section#about .content .description {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section#about .content .description h4 {
+  color: red;
+}
+section#about .content .description p {
+  color: #999;
+}
+section#about .content .statistics {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+section#about .content .statistics span {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+section#about .progress {
+  margin-top: 4px;
+  width: 400px;
+  border-radius: 4px;
+  background: #ffffff;
+  height: 4px;
+}
+section#about .progress .progress-bar-danger {
+  background: #d43f52;
+}
+section#about .text-top {
+  padding-top: 20px;
+}
+section#portfolio {
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+section#portfolio .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+section#portfolio h1 {
+  color: white;
+  font-size: 40px;
+  padding: 40px 40px;
+  text-align: center;
+}
+#portfolio .portfolio-thumb {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+#portfolio .portfolio-thumb .portfolio-overlay {
+  background: #d43f52;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 90px;
+  padding-left: 40%;
+  font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+
+section#portfolio .content img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+footer#contact {
+  color: white;
+  height: 500px;
+  background-color: black;
+}
+footer#contact .content {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer#contact .content .data {
+  width: 400px;
+}
+footer#contact .content .data h1 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+footer#contact .content .data .personal-info {
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+footer#contact .content .data .personal-info .infos {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer#contact .content .your-data .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer#contact .content .your-data .form input {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 500px;
+  padding-left: 15px;
+}
+footer#contact .content .your-data .form textarea {
+  width: 500px;
+  color: white;
+  background-color: black;
+  height: 100px;
+  padding: 10px 15px;
+}
+footer#contact .content .your-data .form button {
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  transition: all 0.5s;
+}
+footer#contact .content .your-data .form button:hover {
+  background-color: white;
+  color: red;
+}
+#map {
+  margin-top: 80px;
+  flex: 1;
+  height: 400px;
+}
